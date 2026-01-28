@@ -1,0 +1,359 @@
+═══════════════════════════════════════════════════════════════════════
+              STRUKTUR PROJECT - DARUL QUR'AN RAHMAN WEBSITE
+                         Versi PHP + MySQL
+═══════════════════════════════════════════════════════════════════════
+
+📁 darulquran-website-php/
+│
+├── 📄 index.php                      # HALAMAN UTAMA
+│   └── File utama yang memanggil semua section
+│   └── URL: http://localhost/darulquran-website-php/
+│
+├── 📄 .htaccess                      # KONFIGURASI APACHE
+│   ├── URL rewriting
+│   ├── Security headers
+│   ├── Browser caching
+│   ├── Compression
+│   └── Error pages
+│
+├── 📄 404.html                       # ERROR PAGE
+│   └── Halaman error 404 - Not Found
+│
+├── 📄 README.md                      # DOKUMENTASI UTAMA
+│   ├── Penjelasan project
+│   ├── Fitur lengkap
+│   ├── Teknologi yang digunakan
+│   ├── Cara instalasi
+│   ├── Troubleshooting
+│   └── License & credits
+│
+├── 📄 INSTALLATION_GUIDE.md          # PANDUAN INSTALASI
+│   ├── Persiapan awal
+│   ├── Step-by-step instalasi
+│   ├── Konfigurasi
+│   ├── Testing fitur
+│   ├── Kustomisasi
+│   ├── Deployment ke hosting
+│   └── Tips & best practices
+│
+├── 📄 CHANGELOG.md                   # RIWAYAT PERUBAHAN
+│   ├── Version history
+│   ├── Bug fixes
+│   ├── New features
+│   └── Future enhancements
+│
+├── 📄 INFO.txt                       # INFORMASI SINGKAT
+│   └── Quick reference untuk project
+│
+├── 📁 api/                           # API ENDPOINTS
+│   │
+│   └── 📄 contact.php                # API FORM KONTAK
+│       ├── Validasi input
+│       ├── Sanitasi data
+│       ├── Insert ke database
+│       ├── Send email notification
+│       └── JSON response
+│
+├── 📁 assets/                        # FILE STATIS (CSS, JS, IMAGES)
+│   │
+│   ├── 📁 css/                       # STYLESHEET
+│   │   │
+│   │   └── 📄 style.css              # CSS UTAMA
+│   │       ├── CSS Variables (:root)
+│   │       ├── Navigation styles
+│   │       ├── Hero slideshow
+│   │       ├── Sections styling
+│   │       ├── Responsive design
+│   │       └── Animations
+│   │
+│   ├── 📁 js/                        # JAVASCRIPT
+│   │   │
+│   │   ├── 📄 main.js                # JAVASCRIPT UTAMA
+│   │   │   ├── Mobile menu toggle
+│   │   │   ├── Navbar scroll effect
+│   │   │   ├── Scroll to top
+│   │   │   ├── Smooth scrolling
+│   │   │   ├── Hero slideshow control
+│   │   │   ├── Intersection observer
+│   │   │   └── Form submission
+│   │   │
+│   │   └── 📄 chat.js                # AI CHATBOT
+│   │       ├── Gemini API integration
+│   │       ├── Chat UI handling
+│   │       ├── Message display
+│   │       └── Typing indicator
+│   │
+│   ├── 📁 galery/                    # FOLDER GAMBAR GALERI
+│   │   ├── bukabersama.png
+│   │   ├── lelang.png
+│   │   ├── MembacaQur'an.png
+│   │   ├── MembacaQur'an2.png
+│   │   ├── pedulibencana.png
+│   │   ├── tasmi'05Juz.png
+│   │   └── tasmi'juz10.png
+│   │
+│   └── 📁 logo/                      # FOLDER LOGO & ICON
+│       ├── logo-DQR.png              # Logo yayasan
+│       ├── logo-BSI.png              # Logo Bank Syariah Indonesia
+│       ├── logo-BCA.png              # Logo Bank BCA
+│       ├── logo-MANDIRI.png          # Logo Bank Mandiri
+│       ├── logo-BRI.png              # Logo Bank BRI
+│       └── QR.png                    # QRIS Code
+│
+├── 📁 config/                        # KONFIGURASI
+│   │
+│   └── 📄 config.php                 # FILE KONFIGURASI UTAMA
+│       ├── Database credentials
+│       ├── Site constants
+│       ├── Contact information
+│       ├── Bank accounts array
+│       ├── Social media links
+│       ├── Gemini API key
+│       └── Database connection function
+│
+├── 📁 database/                      # DATABASE
+│   │
+│   └── 📄 database.sql               # SQL SCHEMA
+│       ├── CREATE DATABASE
+│       ├── Table: contact_messages   # Pesan dari form kontak
+│       ├── Table: donations          # Data donasi
+│       ├── Table: gallery            # Data galeri foto
+│       ├── Table: programs           # Program yayasan
+│       ├── Table: admin_users        # User admin
+│       ├── Table: newsletter_subscribers
+│       ├── Table: chat_history       # History chat AI
+│       └── INSERT sample data
+│
+├── 📁 includes/                      # TEMPLATE COMPONENTS
+│   │
+│   ├── 📄 header.php                 # HEADER TEMPLATE
+│   │   ├── HTML head
+│   │   ├── Meta tags
+│   │   ├── CSS links
+│   │   ├── Navigation bar
+│   │   └── Mobile menu
+│   │
+│   └── 📄 footer.php                 # FOOTER TEMPLATE
+│       ├── Footer content
+│       ├── Social links
+│       ├── Map section
+│       ├── WhatsApp float button
+│       ├── Chat toggle button
+│       ├── Scroll to top button
+│       └── JavaScript includes
+│
+└── 📁 sections/                      # SECTION HALAMAN
+    │
+    ├── 📄 hadith.php                 # SECTION HADITS
+    │   ├── Arabic quote
+    │   ├── Translation
+    │   └── Source reference
+    │
+    ├── 📄 about.php                  # SECTION TENTANG KAMI
+    │   ├── About text
+    │   ├── Organization info
+    │   └── About image
+    │
+    ├── 📄 vision-mission.php         # SECTION VISI MISI
+    │   ├── Vision card
+    │   └── Mission card with list
+    │
+    ├── 📄 programs.php               # SECTION PROGRAM
+    │   ├── Programs array (PHP)
+    │   └── Program cards loop
+    │       ├── Orang Tua Asuh
+    │       ├── Tahfidz Al-Qur'an
+    │       ├── Pendidikan Formal
+    │       ├── Zakat
+    │       ├── Infaq & Sedekah
+    │       ├── Wakaf
+    │       ├── Fidyah
+    │       └── Sedekah Shubuh
+    │
+    ├── 📄 gallery.php                # SECTION GALERI
+    │   ├── Gallery items array (PHP)
+    │   └── Gallery grid loop
+    │
+    ├── 📄 donation.php               # SECTION DONASI
+    │   ├── Bank accounts loop (dari config)
+    │   └── QRIS section
+    │
+    └── 📄 contact.php                # SECTION KONTAK
+        ├── Contact information
+        ├── Contact form
+        ├── Google Maps iframe
+        └── Social media links
+
+
+═══════════════════════════════════════════════════════════════════════
+                        ALUR KERJA WEBSITE
+═══════════════════════════════════════════════════════════════════════
+
+1. USER AKSES WEBSITE
+   └── index.php dimuat
+
+2. INDEX.PHP MEMANGGIL:
+   ├── config/config.php          → Load konfigurasi
+   ├── includes/header.php        → Header & Navigation
+   │
+   ├── HERO SECTION               → Slideshow (langsung di index.php)
+   │
+   ├── sections/hadith.php        → Section Hadits
+   ├── sections/about.php         → Section Tentang
+   ├── sections/vision-mission.php → Section Visi Misi
+   ├── sections/programs.php      → Section Program
+   ├── sections/gallery.php       → Section Galeri
+   ├── sections/donation.php      → Section Donasi
+   ├── sections/contact.php       → Section Kontak
+   │
+   └── includes/footer.php        → Footer & Scripts
+
+3. JAVASCRIPT LOADED:
+   ├── assets/js/main.js          → Interaksi utama
+   └── assets/js/chat.js          → AI Chatbot
+
+4. USER INTERAKSI:
+   ├── Form Kontak Submit
+   │   └── api/contact.php        → Proses & simpan ke DB
+   │
+   └── AI Chat
+       └── Gemini API             → Response dari AI
+
+
+═══════════════════════════════════════════════════════════════════════
+                        DATABASE TABLES
+═══════════════════════════════════════════════════════════════════════
+
+📊 contact_messages
+   ├── id (PRIMARY KEY)
+   ├── name
+   ├── email
+   ├── subject
+   ├── message
+   ├── created_at
+   └── status (unread/read/replied)
+
+📊 donations
+   ├── id (PRIMARY KEY)
+   ├── donor_name
+   ├── email
+   ├── phone
+   ├── amount
+   ├── bank_name
+   ├── payment_method
+   ├── message
+   ├── status (pending/confirmed/completed)
+   ├── created_at
+   └── updated_at
+
+📊 gallery
+   ├── id (PRIMARY KEY)
+   ├── title
+   ├── description
+   ├── image_path
+   ├── category
+   ├── display_order
+   ├── is_active
+   ├── created_at
+   └── updated_at
+
+📊 programs
+   ├── id (PRIMARY KEY)
+   ├── title
+   ├── description
+   ├── icon
+   ├── is_active
+   ├── display_order
+   ├── created_at
+   └── updated_at
+
+📊 admin_users
+   ├── id (PRIMARY KEY)
+   ├── username (UNIQUE)
+   ├── password (HASHED)
+   ├── full_name
+   ├── email (UNIQUE)
+   ├── role (super_admin/admin/editor)
+   ├── is_active
+   ├── last_login
+   ├── created_at
+   └── updated_at
+
+📊 newsletter_subscribers
+   ├── id (PRIMARY KEY)
+   ├── email (UNIQUE)
+   ├── name
+   ├── status (active/unsubscribed)
+   ├── subscribed_at
+   └── unsubscribed_at
+
+📊 chat_history
+   ├── id (PRIMARY KEY)
+   ├── session_id
+   ├── user_message
+   ├── bot_response
+   └── created_at
+
+
+═══════════════════════════════════════════════════════════════════════
+                    FILE YANG PERLU DIKUSTOMISASI
+═══════════════════════════════════════════════════════════════════════
+
+🔧 WAJIB DIKONFIGURASI:
+   ├── config/config.php          → Database credentials
+   └── assets/js/chat.js          → Gemini API Key
+
+🎨 KUSTOMISASI OPSIONAL:
+   ├── assets/css/style.css       → Warna & styling
+   ├── config/config.php          → Info kontak, rekening
+   ├── sections/programs.php      → Daftar program
+   └── sections/gallery.php       → Gambar galeri
+
+
+═══════════════════════════════════════════════════════════════════════
+                        URL STRUCTURE
+═══════════════════════════════════════════════════════════════════════
+
+http://localhost/darulquran-website-php/
+│
+├── /                              → Homepage (index.php)
+├── /#about                        → Section Tentang
+├── /#programs                     → Section Program
+├── /#gallery                      → Section Galeri
+├── /#donation                     → Section Donasi
+├── /#contact                      → Section Kontak
+│
+└── /api/contact.php              → API endpoint (POST)
+
+
+═══════════════════════════════════════════════════════════════════════
+                    DEPENDENCIES & LIBRARIES
+═══════════════════════════════════════════════════════════════════════
+
+📚 FRONTEND:
+   ├── Font Awesome 6.4.0         → Icons
+   ├── Google Fonts               → Typography
+   │   ├── Inter
+   │   ├── Montserrat
+   │   └── Scheherazade New
+   └── Vanilla JavaScript         → No framework
+
+📚 BACKEND:
+   ├── PHP 7.4+                   → Server-side
+   ├── MySQL 5.7+ / MariaDB       → Database
+   └── PDO                        → Database connection
+
+📚 API:
+   └── Google Gemini API          → AI Chatbot
+
+
+═══════════════════════════════════════════════════════════════════════
+
+Catatan:
+- Semua file PHP menggunakan UTF-8 encoding
+- Database menggunakan utf8mb4_unicode_ci collation
+- Assets path relatif untuk portabilitas
+- Modular structure untuk maintainability
+- Prepared statements untuk security
+
+═══════════════════════════════════════════════════════════════════════

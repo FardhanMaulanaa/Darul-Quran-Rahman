@@ -1,0 +1,89 @@
+═══════════════════════════════════════════════════════════════════
+    WEBSITE DARUL QUR'AN RAHMAN - VERSI PHP
+    Asrama Yatim & Dhuafa Jakarta Selatan
+═══════════════════════════════════════════════════════════════════
+
+📦 PAKET INI BERISI:
+--------------------
+✓ Source code lengkap website PHP
+✓ Database SQL (MySQL)
+✓ Assets (CSS, JavaScript)
+✓ Dokumentasi lengkap (README.md)
+✓ Panduan instalasi step-by-step (INSTALLATION_GUIDE.md)
+
+🚀 QUICK START:
+--------------
+1. Extract file ZIP
+2. Copy folder ke: C:\xampp\htdocs\
+3. Import database dari: database/database.sql
+4. Edit config di: config/config.php
+5. Akses: http://localhost/darulquran-website-php/
+
+📋 FITUR UTAMA:
+--------------
+✓ Hero slideshow dengan 7 gambar
+✓ Responsive design (mobile-friendly)
+✓ Form kontak terintegrasi WhatsApp
+✓ AI Chatbot (Google Gemini)
+✓ Galeri foto dengan hover effect
+✓ Informasi donasi lengkap (bank + QRIS)
+✓ Section: About, Visi-Misi, Program, Kontak
+✓ Admin panel ready (struktur database)
+
+💻 REQUIREMENT:
+--------------
+✓ PHP 7.4 atau lebih tinggi
+✓ MySQL 5.7+ / MariaDB
+✓ Apache Web Server (XAMPP/LAMP/WAMP)
+✓ Browser modern (Chrome, Firefox, Edge)
+
+📁 STRUKTUR FOLDER:
+------------------
+darulquran-website-php/
+├── api/              → API endpoints
+├── assets/           → CSS, JS, images
+├── config/           → Konfigurasi database
+├── database/         → SQL schema
+├── includes/         → Header & Footer
+├── sections/         → Section komponen
+├── index.php         → Halaman utama
+├── README.md         → Dokumentasi lengkap
+└── INSTALLATION_GUIDE.md → Panduan instalasi
+
+🔐 DEFAULT LOGIN ADMIN:
+----------------------
+Username: admin
+Password: admin123
+
+⚠️ PENTING: Segera ubah password setelah login!
+
+📞 SUPPORT:
+----------
+Email: darulquranrahman@gmail.com
+WhatsApp: +62 812-1111-7166
+Website: darulquranrahman.org
+
+🎨 KUSTOMISASI:
+--------------
+- Warna: Edit assets/css/style.css (variabel :root)
+- Kontak: Edit config/config.php
+- Program: Edit sections/programs.php
+- Rekening: Edit config/config.php ($bank_accounts)
+
+📖 DOKUMENTASI:
+--------------
+Baca file README.md untuk dokumentasi lengkap
+Baca file INSTALLATION_GUIDE.md untuk panduan instalasi detail
+
+🔧 TROUBLESHOOTING:
+------------------
+Lihat section Troubleshooting di INSTALLATION_GUIDE.md
+untuk solusi masalah umum
+
+═══════════════════════════════════════════════════════════════════
+    © 2026 Darul Qur'an Rahman - All Rights Reserved
+═══════════════════════════════════════════════════════════════════
+
+Dibuat dengan ❤️ menggunakan PHP, MySQL, JavaScript & CSS
+Version: 1.0.0
+Release Date: Januari 2026
